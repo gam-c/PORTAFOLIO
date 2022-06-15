@@ -39,8 +39,6 @@
                 <li class="nav__link click">
                     <a href="#" class="
                     nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
                     "><i class="fas fa-adjust"></i></a>
                 </li>
             </ul>
@@ -73,6 +71,17 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+                <p class="modal__para">I'm a 36 year-old Chilean frontend software engineer with a strong passion for developing websites with a great user experiences.
+                    <br>
+                    I currently solve extremely difficult engineering problems every day with React, TypeScript  in my stardup METAMOD.         
+                </p>
+            </div>
+            <div class="modal__half modal__contact">Let's have a chat!</div>
+        </div>
     </section>
     <section id="projects">
         <div class="container">
@@ -81,6 +90,56 @@
                     Here are some of my <span class="orange">projects</span>
                 </h1>
                 <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/google mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Google In-Store
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS ,JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ut magnam facilis fuga obcaecati soluta pariatur fugiat veritatis, eaque quae? Odit asperiores perspiciatis voluptas ratione ab cum suscipit est possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit optio excepturi placeat. Quae id illo provident odit, velit aspernatur, nemo a repellendus illum itaque, non reiciendis possimus quam accusantium ipsam?
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/gam-c" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://gamc.dev" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Project 
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS ,JavaScript, Vue, Vuex
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ut magnam facilis fuga obcaecati soluta pariatur fugiat veritatis, eaque quae? Odit asperiores perspiciatis voluptas ratione ab cum suscipit est possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit optio excepturi placeat. Quae id illo provident odit, velit aspernatur, nemo a repellendus illum itaque, non reiciendis possimus quam accusantium ipsam?
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/gam-c" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://gamc.dev" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="project">
                         <div class="project__wrapper">
                             <img src="./assets/blinker mockup.png" class="project__img" alt="">
@@ -110,5 +169,42 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <a href="#" class="footer__anchor">
+                    <figure class="footer__logo">
+                        <img src="./assets/gamcw.svg" alt="" class="footer__logo--img">
+                    </figure>
+                    <span class="footer__logo--popper">
+                        <i class="fas fa-arrow-up"></i>
+                    </span>
+                </a>
+                <div class="footer__social--list">
+                    <a href="https://github.com/gam-c" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white
+                    ">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ga-mc/" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white
+                    ">Linkedin</a>
+                    <a href="#" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white
+                    ">Contact</a>
+                    <a href="#" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white
+                    ">Resume</a>
+                </div>
+                <div class="footer__copyright">Copyright © 2022 Gustavo Meza</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
