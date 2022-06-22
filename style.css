@@ -27,11 +27,12 @@ button {
 
 section {
     background-color: #f4f4f4;
+    transition: all 300ms ease;
 }
 
 input, textarea {
     width: 100%;
-    background-color: #0f1626;
+    background-color: #242424;
     color: #f4f4f4;
     outline: none;
     border: 2px solid #f4f4f4;
@@ -99,7 +100,7 @@ label {
 }
 
 .orange {
-    color: #ff533d
+    color: #ff533d !important
 }
 
 .link__hover-effect {
@@ -117,7 +118,7 @@ label {
 }
 
 .link__hover-effect--black:after {
-    background-color: #0f1626;
+    background-color: #242424;
 }
 
 .link__hover-effect--white:after {
@@ -127,6 +128,51 @@ label {
 .link__hover-effect:hover:after {
     left: 0;
     width: 100%;
+}
+
+nav, 
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms;
+}
+
+.modal__open nav,
+.modal__open .scroll,
+.modal__open .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.dark__theme .title,
+.dark__theme .section__title,
+.dark__theme .section__sub-title,
+.dark__theme .nav__link--anchor, 
+.dark__theme .fa-adjust,
+.dark__theme .header__para {
+    color: #f4f4f4;
+}
+
+.dark__theme section {
+    background-color: #242424;
+}
+
+.dark__theme .scroll__icon {
+    border-color: #f4f4f4;
+}
+
+.dark__theme .scroll__icon:after,
+.dark__theme .link__hover-effect--black:after {
+    background-color: #f4f4f4;
+}
+
+
+
+.dark__theme .mail__btn {
+    background-color: #f4f4f4;
+    color: #242424;
 }
 
 /* 
@@ -182,7 +228,7 @@ label {
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: #0f1626;
+    background-color: #242424;
     color: #f4f4f4;
     position: fixed;
     bottom: 32px;
@@ -201,7 +247,7 @@ label {
 .scroll__icon {
     width: 20px;
     height: 30px;
-    border: 2px solid #0f1626;
+    border: 2px solid #242424;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -212,7 +258,7 @@ label {
     content: "";
     width: 4px;
     height: 6px;
-    background-color: #0f1626;
+    background-color: #242424;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -260,7 +306,7 @@ nav {
 
 .nav__link--anchor {
     font-size: 16px;
-    color: #0f1626;
+    color: #242424;
     font-weight: 700;
 }
 
@@ -284,10 +330,19 @@ nav {
     width: 90%;
     max-width: 1100px;
     height: 700px;
-    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal__open .modal {
+    z-index: 60;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    visibility: visible;
+
 }
 
 .modal__half {
@@ -297,10 +352,17 @@ nav {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modal__open .modal__about,
+.modal__open .modal__contact {
+    transform: translateX(0%);
 }
 
 .modal__about {
     background-color: #f4f4f4;
+    transform: translateX(-110%);
 }
 
 .modal__languages {
@@ -340,8 +402,9 @@ nav {
 }
 
 .modal__contact {
-    background-color: #0f1626;
+    background-color: #242424;
     color: #f4f4f4;
+    transform: translateX(110%);
 }
 
 .modal__title {
@@ -390,16 +453,16 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
-    justify-content: center;
-    z-index: -1;
+    justify-content: center; 
+    z-index: -1; 
+
 }
 
 .modal__overlay--loading {
-    background-color: #0f1626;
+    background-color: #242424;
     font-size: 80px;
-    
 }
 
 .modal__overlay--success {
@@ -408,6 +471,11 @@ nav {
     font-weight: 700;
     text-align: center;
     padding: 28px;
+}
+
+.modal__overlay--visible {
+    z-index: 1; 
+    display: flex;
 }
 
 .fa-spinner {
@@ -489,7 +557,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0f1626;
+    background-color: #242424;
     opacity: 0;
     transition: all 450ms ease;
 }
@@ -520,7 +588,7 @@ nav {
 */
 
 footer {
-    background-color: #0f1626;
+    background-color: #242424;
     display: flex;
     padding: 4% 0;
 }

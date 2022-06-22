@@ -38,14 +38,14 @@
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     "><i class="fas fa-adjust"></i></a>
@@ -59,7 +59,7 @@
                 <p class="header__para">
                     I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
                     <br>
-                    Here's a bit more <b class="orange">about me</b>.
+                    Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/ga-mc/" target="_blank" class="social__link click">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fas fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -124,6 +124,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
                 <form id="contact__form" onsubmit="contact(event)" >
@@ -132,7 +133,7 @@
                         <input name="user_name" type="text" class="input" required>
                     </div>
                     <div class="form__item">
-                        <label class="from__item--label">Email</label>
+                        <label class="from__item--label">E-mail</label>
                         <input name="user_email" type="email" class="input" required>
                     </div>
                     <div class="form__item">
@@ -141,11 +142,10 @@
                     </div>
                     <button id="contact__submit" class="form__submit">Send it!</button>
                 </form>
-                <div class="modal__ovarlay modal__overlay--loading">
+                <div class="modal__overlay modal__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking with you soon.</div>
-                <i class="fas fa-times modal__exit click"></i>
             </div>
         </div>
     </section>
