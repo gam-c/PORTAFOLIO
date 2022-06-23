@@ -258,6 +258,7 @@ nav,
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 22;
 }
 
 .scroll__icon {
@@ -729,9 +730,6 @@ footer {
     }
     .modal__half {
         width: 100%;
-    }
-    .shape {
-       display: none;
     }
 }
 
