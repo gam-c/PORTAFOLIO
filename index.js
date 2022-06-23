@@ -1,6 +1,6 @@
-// template_ky7ejos
-// service_qdr8wxm
-// aA94QZ404ZE1_FY0g
+// template_ky7ejos  GMAIL
+// service_qdr8wxm // service_gte4rpm NEW EMAIL @GAMC.DEV
+// aA94QZ404ZE1_FY0g 
 
 /* async function contact(event) {
     await event.preventDefault()
@@ -48,7 +48,7 @@ function contact(event) {
 
     emailjs
         .sendForm(
-            'service_qdr8wxm',
+            'service_gte4rpm',
             'template_ky7ejos',
             event.target,
             'aA94QZ404ZE1_FY0g'
