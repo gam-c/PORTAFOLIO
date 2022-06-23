@@ -731,6 +731,23 @@ footer {
     }
 }
 
+@media (max-width:680px) {
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        max-width: none;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    
+}
+
 /* SMART PHONES (SMALL) */
 
 @media (max-width: 480px) {
