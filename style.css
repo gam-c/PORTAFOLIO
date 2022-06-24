@@ -219,6 +219,10 @@ nav,
     max-width: 450px;
 }
 
+.header__container {
+    min-height: 90vh;
+}
+
 .social__list {
     margin-top: 16px;
     display: flex;
@@ -307,6 +311,7 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
     height: 100px;
+    min-height: 10vh;
 }
 
 #personal-logo {
@@ -514,6 +519,7 @@ nav {
     right: 40px;
     color: #f4f4f4;
     font-size: 24px;
+    z-index: 90;
 }
 
 /* 

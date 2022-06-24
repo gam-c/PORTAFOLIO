@@ -73,7 +73,10 @@ function toggleModal() {
 }
 
 
-
+function closeModal() {
+    isModalOpen = true
+    document.body.classList.remove("modal__open")
+}
 
 
 
